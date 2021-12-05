@@ -13,7 +13,7 @@ void setup() {
   Keyboard.releaseAll();
   delay(5000); // wait until switch to shell
 
-  Keyboard.println("sudo sed 's/XKBLAYOUT=@gb@/XKBLAYOUT=@us@/' -i /etc/default/keyboard");
+  Keyboard.println("sudo sed 's/XKBLAYOUT=@gb@/XKBLAYOUT=@us@/' -i /etc/default/keyboard"); // '@' is '"' because the raspberry is by default in gb layout
   delay(500); // change keyboard layout in /etc/default/keyboard
   
   Keyboard.println("sudo setupcon -k");
